@@ -4,7 +4,7 @@ const Navbar = () => {
     
     return (
         <>
-            <section className='navbar-bg main-hero-container'>
+            <section className='navbar-bg'>
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
@@ -31,8 +31,8 @@ const Navbar = () => {
                             </ul>
                             <form className="d-flex">
                                 
-                                <button className="btn btn-outline-success" type="submit">Sign Up</button>
-                                <button className="btn btn-outline-success" type="submit">Sign In</button>
+                                <button className="btn btn-outline-success btn-style btn-style-border" type="submit">Sign Up</button>
+                                <button className="btn btn-outline-success btn-style btn-style-border" type="submit">Sign In</button>
                             </form>
                         </div>
                     </div>
