@@ -16,7 +16,7 @@ const Header = () => {
                                 officiis tempora recusandae voluptate quam, nisi odio officiis
                                 tempora recusandae
                             </p>
-                            <h3>Get early access for you</h3>
+                            <h3 id='head-of-mainpara'>Get early access for you</h3>
                             <div className="input-group mt-3">
                                 <input
                                     type="text"

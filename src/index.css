@@ -107,10 +107,12 @@ header{
   background-color: var(--bgcolor);
   min-height: 100vh;
   width: 100%;
+ 
 }                        
 .main-hero-container{
   height: 80vh;
   display: flex;
+  /* z-index: 1; */
   /* background-color: yellow; */
 }
 
@@ -125,6 +127,7 @@ header{
   margin: 3rem 0 5rem 0;
   font-weight: lighter;
   width: 75%;
+  color: var(--text-color2);
 }
 
 .input-group{
@@ -155,6 +158,9 @@ font-weight: lighter;
   cursor: pointer;
 }
 
+#head-of-mainpara{
+  color: var(--text-color2);
+}
 .main-hero-section-images{
   position: relative;
 }
@@ -174,4 +180,56 @@ position: absolute;
   left:55%;
   top:-2%;
 }
+/* --------------------------------- Hero section  Ends  
+                        -------------------------------------------------------*/
+/* ---------------------------------Work section below Hero section  Starts  
+                        -------------------------------------------------------*/
+
+.work-container{
+  width: 80vw;
+  padding: 5rem;
+  box-shadow: 0 0 4rem 1.2rem rgba(0, 0, 0, 0.1);
+  margin-top: -10rem;
+  /* z-index: 3; */
+  background-color: antiquewhite;
+  border-radius: .5rem;
+}  
+
+.work-container .main-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  word-spacing: 0.5rem;
+}
+.work-container-subdiv{
+  padding: 0 6rem;
+
+}
+.work-container .sub-heading{
+font-size: 2rem;
+font-weight: normal;
+}
+
+.fontawesome-stlye{
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+#para-of-api{
+color: #33042d;
+}
+
+
+/* --------------------------------- Work section below Hero section  Ends  
+                        -------------------------------------------------------*/
+
 
