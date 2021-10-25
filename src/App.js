@@ -3,6 +3,7 @@ import AboutUs from './component/AboutUs'
 import Header from './component/Header'
 import HowItWork from './component/HowItWork'
 import Navbar from './component/Navbar'
+import Services from './component/Services'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Navbar />
       <Header />
       <HowItWork />
-      <AboutUs/>
+      <AboutUs />
+      <Services/>
     </>
   )
 }

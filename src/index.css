@@ -282,3 +282,56 @@ color: #33042d;
 }
 /* --------------------------------- About Us section  Ends 
                         -------------------------------------------------------*/
+/* --------------------------------- Services section  Starts
+                        -------------------------------------------------------*/
+
+.serivice-main-container{
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+.serivice-main-container .main-heading{
+  margin: 3rem 0;
+
+}
+
+.work-container-subdiv{
+  box-shadow:0 0.1rem 0.4rem rgba(0, 0, 0, 0.16) ;
+}
+.work-container-subdiv p{
+  color: #33042d;
+}
+
+
+.work-container-subdiv:hover{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(71,9,121,1) 33%, rgb(255, 0, 200) 100%);;
+}
+
+.work-container-subdiv:hover > h2 {
+ color: antiquewhite;
+}
+.work-container-subdiv:hover > p {
+ color: antiquewhite;
+}
+.serivice-main-container .work-container-subdiv .fontawesome-stlye{
+  text-align: left;
+  margin: 2rem 0;
+}
+
+@media (min-width: 1400px) {
+  .service-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 28% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 28% !important;
+    margin: 2.5rem auto !important;
+  }
+}
+
+/* --------------------------------- Services section  Ends 
+                        -------------------------------------------------------*/
