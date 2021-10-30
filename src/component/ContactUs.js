@@ -1,6 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ContactUs = () => {
+    const [userData, setUserData] = useState({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        address: "",
+        message: ""
+    })
+
+    let name, value;
+    const postUserData = (event) => {
+        name = event.target.name;
+        value = event.target.value;
+        setUserData({ ...userData, [name]: value })
+    }
+    // connect with firebase 
+    const submitData = async (event) => {
+        event.preventDefault();
+        const { firstName, lastName, phone, email, address, message } = userData;
+        if (firstName && lastName && phone && email && address && message) {
+            const res = await fetch(
+                "https://fir-react-app-3ca73-default-rtdb.firebaseio.com/userDataRecords.json",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "aplication/json"
+                    },
+                    body: JSON.stringify({
+                        firstName, lastName, phone, email, address, message
+                    }),
+                }
+            );
+            if (res) {
+                setUserData({
+                    firstName: "",
+                    lastName: "",
+                    phone: "",
+                    email: "",
+                    address: "",
+                    message: ""
+                })
+                alert("Data is Stored")
+            }
+            else {
+                alert("plz fill the data")
+            }
+        } else {
+            alert("plz fill the data")
+        }
+    }
     return (
         <>
             <section className='contactus-section'>
@@ -24,35 +74,35 @@ const ContactUs = () => {
                                     <form method='POST'>
                                         <div className="row">
                                             <div className="col-12 col-lg-6 contact-input-filed">
-                                                <input className='form-control' type="text" name="" id="" placeholder='First Name' />
+                                                <input className='form-control' type="text" name="firstName" id="" placeholder='First Name' value={userData.firstName} onChange={postUserData} />
                                             </div>
                                             <div className="col-12 col-lg-6 contact-input-filed">
-                                                <input className='form-control' type="text" name="" id="" placeholder='Last Name' />
+                                                <input className='form-control' type="text" name="lastName" id="" placeholder='Last Name' value={userData.lastName} onChange={postUserData} />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-12 col-lg-6 contact-input-filed">
-                                                <input className='form-control' type="number" name="" id="" placeholder='Mobile NO.'></input>
+                                                <input className='form-control' type="number" name="phone" id="" placeholder='Mobile NO.' value={userData.phone} onChange={postUserData}></input>
                                             </div>
                                             <div className="col-12 col-lg-6 contact-input-filed">
-                                                <input className='form-control' type='email' name="" id="" placeholder='Enter your E-mail' />
+                                                <input className='form-control' type='email' name="email" id="" placeholder='Enter your E-mail' value={userData.email} onChange={postUserData} />
+                               e             </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-12 contact-input-filed">
+                                                <input className='form-control' type="text" name="address" id="" placeholder='Add your address' value={userData.address} onChange={postUserData} />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-12 contact-input-filed">
-                                                <input className='form-control' type="text" name="" id="" placeholder='Add your Address' />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 contact-input-filed">
-                                                <input className='form-control' type="text" name="" id="" placeholder='Enter Your Feedback' />
+                                                <input className='form-control' type="text" name="message" id="" placeholder='Enter Your Feedback' value={userData.message} onChange={postUserData} />
                                             </div>
                                         </div>
                                         <div className="mb-3 form-check contact-input-filed">
-                                            <input type="checkbox" className="form-check-input " id="exampleCheck1"/>
-                                                <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                                            <input type="checkbox" className="form-check-input " id="exampleCheck1" />
+                                            <label className="form-check-label" for="exampleCheck1">Check me out</label>
                                         </div>
-                                        <button className="btn btn-outline-success btn-style btn-style-border w-100" type="submit">Submit</button>
+                                        <button className="btn btn-outline-success btn-style btn-style-border w-100" type="submit" onClick={submitData}>Submit</button>
                                     </form>
                                 </div>
                             </div>
