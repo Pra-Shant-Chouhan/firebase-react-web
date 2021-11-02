@@ -6,11 +6,11 @@ const Header = () => {
             <header>
                 <section className="container main-hero-container">
                     <div className="row">
-                        <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start ">
+                        <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start order-lg-first order-last">
                             <h1 className="display-2">
                                 Online Payment Made <br /> Easy For You.
                             </h1>
-                            <p className="main-hero-para">
+                            <p className="main-hero-para" id='main-section-para'>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
                                 quia quis? Ipsa officia ad deserunt voluptate quam, nisi odio
                                 officiis tempora recusandae voluptate quam, nisi odio officiis
@@ -27,7 +27,7 @@ const Header = () => {
                             </div>
                         </div>
                         {/*  --------------- main header right side--------------  */}
-                        <div className="col-12 col-lg-6 header-right-side d-flex justify-content-center align-items-center main-hero-section-images">
+                        <div className="col-12 col-lg-6 header-right-side d-flex justify-content-center align-items-center main-hero-section-images order-md-first order-sm-first">
                             <img
                                 src="./images/hero1.jpg"
                                 alt="heroimg"

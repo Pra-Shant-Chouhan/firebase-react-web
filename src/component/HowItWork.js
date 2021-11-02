@@ -15,7 +15,7 @@ const HowItWork = () => {
                             const { id, logo, title, info } = curElem;
                             return (
                                 <>
-                                    <div className="col-12 col-lg-4 text-center work-container-subdiv" key ={id}>
+                                    <div className="col-12 col-lg-4 text-center work-container-subdiv " id='how-it-work-div' key ={id}>
                                         <i className={`fontawesome-stlye ${logo}`}></i>
                                         <h2 className="sub-heading">{`${title}`}</h2>
                                         <p className="main-hero-para w-100" id='para-of-api'>

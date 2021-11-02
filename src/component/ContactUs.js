@@ -62,7 +62,7 @@ const ContactUs = () => {
                                     <h1 className='main-heading fw-blod'>
                                         Contact with our <br /> Sales Team
                                     </h1>
-                                    <p className="main-hero-para">
+                                    <p className="main-hero-para" id='contact-us-para'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nihil natus. Eligendi nostrum exercitationem enim voluptas consequatur voluptatem. Voluptatem, dolore.
                                     </p>
                                     <figure>
@@ -98,10 +98,7 @@ const ContactUs = () => {
                                                 <input className='form-control' type="text" name="message" id="" placeholder='Enter Your Feedback' value={userData.message} onChange={postUserData} />
                                             </div>
                                         </div>
-                                        <div className="mb-3 form-check contact-input-filed">
-                                            <input type="checkbox" className="form-check-input " id="exampleCheck1" />
-                                            <label className="form-check-label" for="exampleCheck1">Check me out</label>
-                                        </div>
+                                        
                                         <button className="btn btn-outline-success btn-style btn-style-border w-100" type="submit" onClick={submitData}>Submit</button>
                                     </form>
                                 </div>

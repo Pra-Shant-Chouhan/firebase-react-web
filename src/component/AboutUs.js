@@ -69,8 +69,8 @@ const AboutUs = () => {
                             <br />
                             <button className="btn btn-outline-success btn-style btn-style-border" type="submit">Learn More</button>
                         </div>
-                        <div className='col-12 col-lg-5  our-service-rightside-img'>
-                                <img src=".\images\callcenter.jpg" alt="AboutUsImg" />
+                        <div className='col-12 col-lg-5  our-service-rightside-img "'>
+                                <img src=".\images\callcenter.jpg" alt="AboutUsImg " />
 
                             </div>
                     </div>
