@@ -13,16 +13,16 @@ const Footer = () => {
                                     <h2>Company</h2>
                                     <ul>
                                         <li>
-                                            <a href="#">About</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">About</a>
                                         </li>
                                         <li>
-                                            <a href="#">Privacy Policy</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#">Terms of Service</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Terms of Service</a>
                                         </li>
                                         <li>
-                                            <a href="#">Advertising</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Advertising</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -31,18 +31,18 @@ const Footer = () => {
                                     <h2>Support</h2>
                                     <ul>
                                         <li>
-                                            <a href="#">Help
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Help
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">Blog
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Blog
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">Pricing</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Pricing</a>
                                         </li>
                                         <li>
-                                            <a href="#">Knowledge base</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Knowledge base</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -51,16 +51,16 @@ const Footer = () => {
                                     <h2>Services</h2>
                                     <ul>
                                         <li>
-                                            <a href="#">Blog</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Blog</a>
                                         </li>
                                         <li>
-                                            <a href="#">Events</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Events</a>
                                         </li>
                                         <li>
-                                            <a href="#">Chargeback Guide</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Chargeback Guide</a>
                                         </li>
                                         <li>
-                                            <a href="#">Settlement Guide</a>
+                                            <a href="https://github.com/Pra-Shant-Chouhan">Settlement Guide</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                                             </a>
                                         </div>
                                         <div className="col-3 mx-auto">
-                                            <a href="">
+                                            <a href="linkedin.com/in/prashant-chouhan-a94556186">
                                                 <i className='fab fa-linkedin fontawesome-stlye'></i>
                                             </a>
 

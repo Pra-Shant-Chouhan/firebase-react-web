@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import AboutHowtoUse from '../API/AboutHowtoUse'
 
 const AboutUs = () => {
+    // eslint-disable-next-line 
     const [aboutData, setAboutData] = useState(AboutHowtoUse)
     return (
         <>
@@ -21,7 +22,7 @@ const AboutUs = () => {
                                 const { id, title, info } = curElem;
                                 return (
                                     <>
-                                        <div className="row our-services-info" key={id}>
+                                        <div className="row our-services-info" key={title}>
                                             <div className="col-1 our-services-number">{id}</div>
                                             <div className="col-10 our-service-data">
                                                 <h2>{title}</h2>
@@ -55,7 +56,7 @@ const AboutUs = () => {
                                 const { id, title, info } = curElem;
                                 return (
                                     <>
-                                        <div className="row our-services-info" key={id}>
+                                        <div className="row our-services-info" key={info}>
                                             <div className="col-1 our-services-number">{id}</div>
                                             <div className="col-10 our-service-data">
                                                 <h2>{title}</h2>

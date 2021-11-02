@@ -82,11 +82,12 @@ const ContactUs = () => {
                                         </div>
                                         <div className="row">
                                             <div className="col-12 col-lg-6 contact-input-filed">
-                                                <input className='form-control' type="number" name="phone" id="" placeholder='Mobile NO.' value={userData.phone} onChange={postUserData}></input>
+                                                <input className='form-control' type="tel" name="phone" id="" placeholder='Mobile NO.' value={userData.phone} onChange={postUserData}></input>
+                                                
                                             </div>
                                             <div className="col-12 col-lg-6 contact-input-filed">
                                                 <input className='form-control' type='email' name="email" id="" placeholder='Enter your E-mail' value={userData.email} onChange={postUserData} />
-                               e             </div>
+                                            </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-12 contact-input-filed">

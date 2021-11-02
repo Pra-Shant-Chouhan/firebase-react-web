@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import serviceapi from '../API/serviceapi.js'
 
 const Services = () => {
+    // eslint-disable-next-line 
     const [serviceData, setServiceData] = useState(serviceapi)
     return (
         <>
@@ -16,10 +17,8 @@ const Services = () => {
                             return (
                                 <>
                                     <div className="col-12 com-lg-4 col-xxl-4 work-container-subdiv my-5" key={id}>
-                                    <i className={`fontawesome-stlye ${logo}`}></i>
-                                            
-                                    
-                                        <h2 className="subheading">{ title}</h2>
+                                        <i className={`fontawesome-stlye ${logo}`}></i>
+                                        <h2 className="subheading">{title}</h2>
                                         <p className='main-hero-para'>{info}</p>
                                     </div>
                                 </>
